@@ -1,10 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9EF6D4B3-1734-4B72-9B05-DF46E74EDB3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{E3AFD5B0-80E1-4EFE-9980-C92F3FFBA9CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{12D6C024-F89E-4FB7-9615-E2606087F7F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{CFC0FA29-70EA-4A0F-B192-0B7913EEA7CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{9A5EA69D-D192-4284-9788-3D045F2C7980}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12D6C024-F89E-4FB7-9615-E2606087F7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D6C024-F89E-4FB7-9615-E2606087F7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D6C024-F89E-4FB7-9615-E2606087F7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D6C024-F89E-4FB7-9615-E2606087F7F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A5EA69D-D192-4284-9788-3D045F2C7980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A5EA69D-D192-4284-9788-3D045F2C7980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A5EA69D-D192-4284-9788-3D045F2C7980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A5EA69D-D192-4284-9788-3D045F2C7980}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3AFD5B0-80E1-4EFE-9980-C92F3FFBA9CA} = {9EF6D4B3-1734-4B72-9B05-DF46E74EDB3A}
+		{12D6C024-F89E-4FB7-9615-E2606087F7F0} = {E3AFD5B0-80E1-4EFE-9980-C92F3FFBA9CA}
+		{9A5EA69D-D192-4284-9788-3D045F2C7980} = {CFC0FA29-70EA-4A0F-B192-0B7913EEA7CE}
 	EndGlobalSection
 EndGlobal
