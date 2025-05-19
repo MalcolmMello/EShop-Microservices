@@ -1,4 +1,4 @@
-﻿using Ordering.Application.Orders.Queries.GetOrdersByCustomerQuery;
+﻿using Ordering.Application.Orders.Queries.GetOrdersByCustomer;
 
 namespace Ordering.API.Endpoints;
 public record GetOrdersByCustomerResponse(IEnumerable<OrderDto> Orders);
